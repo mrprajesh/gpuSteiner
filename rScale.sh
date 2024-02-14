@@ -13,7 +13,7 @@ do
   mkdir $FOL
   NAME=$SRCNAME
   #! NAME=$(echo $SRC | awk -F "gpuSteiner" '{print $2}')
-  /usr/local/cuda-10.2/bin/nvcc -o "$SRC.out" "$SRC.cu" -Wno-deprecated-gpu-targets -std=c++11
+  nvcc -o "$SRC.out" "$SRC.cu" -Wno-deprecated-gpu-targets -std=c++11
   echo "Filename, GPU Time(ms), -- compiled! "
   echo $SRC $NAME
   for file in $INPUTDIR/*.txt  #

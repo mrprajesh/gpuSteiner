@@ -1,4 +1,4 @@
-// Working fast KMB CCPU
+// Working faster KMB CPU
 
 #include <algorithm>
 #include <iostream>
