@@ -1,5 +1,18 @@
 // Working faster KMB CPU
-
+/*
+ * // For IJPP'22 paper at https://doi.org/10.1007/s10766-021-00723-0.
+ *
+ * // For compiling
+ * g++ -Wall -o "2approxCpu2.out" "2approxCpu2.cpp" -O3
+ *
+ * // Authors
+ * Rajesh Pandian M | https://mrprajesh.co.in
+ * Rupesh Nasre     | www.cse.iitm.ac.in/~rupesh
+ * N.S.Narayanaswamy| www.cse.iitm.ac.in/~swamy
+ *
+ * MIT LICENSE
+ *
+ */
 #include <algorithm>
 #include <iostream>
 #include <map>
