@@ -766,7 +766,7 @@ int main(int argc, char **argv){
 
 	duration<double> timespent = end - start;
 	cout  << "TIME "<<timespent.count()*1000 << endl; // retuns in us ; converted to ms
-//		cout << getGraphWeight(graph) ;
+	//	cout << getGraphWeight(graph) ;
 	//~ printAdjList(graph);
 	//! printEdgeList(minG , false,false);
 	return 0;
