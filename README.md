@@ -5,7 +5,7 @@
 
 Accelerating Computation of Steiner Trees on GPUs at [https://doi.org/10.1007/s10766-021-00723-0](https://doi.org/10.1007/s10766-021-00723-0)
 
-This repo contains the latest version of our intial IJPP/zenodo code [https://doi.org/10.5281/zenodo.4477087](https://doi.org/10.5281/zenodo.4477087)
+This repo contains the latest version of our intial IJPP/zenodo [code](https://doi.org/10.5281/zenodo.4477087).
 
 ## Publication
 
