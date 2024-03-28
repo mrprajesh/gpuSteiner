@@ -170,15 +170,19 @@ bool printHash = false;
 
 int main(int argc, char** argv) {
   if (argc == 1) {
-    printf("Usage: %s n -p\nn: #SSSPs in parallel. Default n=2\n", argv[0]);
+    printf("Usage: %s <p> -v < tcSelected/instance137.gr.txt	 \n\
+     p: # of SSSPs in parallel. 								 \n\
+    -v: prints steiner tree edges. Default: Steiner VALUE and times\n\ 	
+    E.g. ./gpuSteiner6-oddAgainWithKtimer2Sh3.out 16 < tcSelected/instance137.gr.txt
+    ", argv[0]);
     exit(0);
   }
-  if (argc > 1) {
+  if (argc > 0) {
     //~ printEdges=true; //prints edges
-    sCount = ((atoi(argv[1]) == 0) ? 2 : atoi(argv[1]));
+    sCount = ((atoi(argv[1]) == 0) ? 2 : atoi(argv[1])); //DEFAULT IS 2
     printHash = true;
   }
-  if (argc > 2) {
+  if (argc > 2) { // infact any 3rd will do.
     printEdges = true;
   }
 
@@ -339,7 +343,7 @@ void MSTGraph(int t, int* terminals, map<pair<int, int>, int>& W, set<pair<int, 
         printf("%d %d\n", v1 + 1, v2 + 1);
       }
     }
-    printf("VALUE %d,%f\n", mstVal, totalTimeMilliSec);
+    printf("VALUE %d,%f ms\n", mstVal, totalTimeMilliSec);
   }
 
   //! freeMem(); // This frees the GPU memory as well! OMG!
@@ -489,7 +493,7 @@ void MSTGraphG2(set<pair<int, int>>& stEdges, set<int>& nodeSet, map<pair<int, i
   }
   // For each terminal on their respective parent array!
 
-  printf("VALUE %d,%f, %f\n", minimumCost, totalTimeMilliSec, milliseconds);
+  printf("VALUE %d,%f ms, %f ms\n", minimumCost, totalTimeMilliSec, milliseconds);
 
   DEBUG printf("in MST Graph2\n");
   freeMem();
