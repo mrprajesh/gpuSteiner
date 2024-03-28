@@ -170,11 +170,9 @@ bool printHash = false;
 
 int main(int argc, char** argv) {
   if (argc == 1) {
-    printf("Usage: %s <p> -v < tcSelected/instance137.gr.txt	 \n\
-     p: # of SSSPs in parallel. 								 \n\
-    -v: prints steiner tree edges. Default: Steiner VALUE and times\n\ 	
-    E.g. ./gpuSteiner6-oddAgainWithKtimer2Sh3.out 16 < tcSelected/instance137.gr.txt
-    ", argv[0]);
+    printf("Usage: %s <p> -v < tcSelected/instance137.gr.txt	 \n 	\
+     p: # of SSSPs in parallel. 								 \n 	\
+    -v: prints steiner tree edges. Default: Steiner VALUE and times \n  ", argv[0]);
     exit(0);
   }
   if (argc > 0) {
