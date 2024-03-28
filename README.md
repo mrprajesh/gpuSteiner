@@ -45,6 +45,23 @@ make
  * Rupesh Nasre       | www.cse.iitm.ac.in/~rupesh
  * N.S.Narayanaswamy  | www.cse.iitm.ac.in/~swamy
 
+## Citation
+please use the below to cite our work.
 
+```
+@article{DBLP:journals/ijpp/MuniasamyNN22,
+  author       = {Rajesh Pandian Muniasamy and
+                  Rupesh Nasre and
+                  N. S. Narayanaswamy},
+  title        = {Accelerating Computation of Steiner Trees on GPUs},
+  journal      = {International Journal of Parallel Programming},
+  volume       = {50},
+  number       = {1},
+  pages        = {152--185},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/s10766-021-00723-0},
+  doi          = {10.1007/S10766-021-00723-0},
+}
+```
 # LICENSE
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
